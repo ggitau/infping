@@ -125,7 +125,7 @@ func writePoints(config *toml.TomlTree, con client.Client, host string, sent str
 	// Create new point batch
 	bp, _ := client.NewBatchPoints(client.BatchPointsConfig{
 		Database:  db,
-		Precision: "s",
+		Precision: "ns",
 	})
 
 	// Create point and add to batch
